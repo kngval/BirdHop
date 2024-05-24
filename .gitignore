@@ -16,6 +16,8 @@
 *.booproj
 *.svd
 
+Assets/Scenes
+
 # OS generated files
 .DS_Store
 .DS_Store?
