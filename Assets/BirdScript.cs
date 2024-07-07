@@ -9,14 +9,17 @@ public class BirdScript : MonoBehaviour
     public float JumpStrength;
     void Start()
     {
+        Vector2 startPosition = transform.position;
+        startPosition.y = 10;
+        transform.position = startPosition;
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        if(Input.GetKeyDown(KeyCode.Space) == true)
+    {
+        if (Input.GetKeyDown(KeyCode.Space) == true)
         {
-        BirdRigidBody.velocity = Vector2.up * JumpStrength;
+            BirdRigidBody.velocity = Vector2.up * JumpStrength;
         }
     }
 }
