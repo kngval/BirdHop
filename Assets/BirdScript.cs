@@ -10,7 +10,7 @@ public class BirdScript : MonoBehaviour
     void Start()
     {
         Vector2 startPosition = transform.position;
-        startPosition.y = 10;
+        startPosition.y = 0;
         transform.position = startPosition;
     }
 
